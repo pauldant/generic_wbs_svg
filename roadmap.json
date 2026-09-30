@@ -1,0 +1,30 @@
+{
+  "title": "POC Estimated Delivery", 
+  "subtitle": "Each block represents one calendar week. Workstream activities overlap only at the Workstream 1 → Workstream 2 handoff. Prerequisite provisioning must be completed before Week 1.",
+  "weeks": 8,
+  "badge": "8 Weeks",  
+  "colors": {
+    "planning": "#647892",
+    "workstream1": "#2176ed",
+    "workstream2": "#7835ee",    
+    "acceptance": "#16a35c"
+  },
+  "legend": [
+    {"label": "Planning / Handoff", "color": "planning"},
+    {"label": "Workstream 1", "color": "workstream1"},
+    {"label": "Workstream 2", "color": "workstream2"},    
+    {"label": "Acceptance / Milestone", "color": "acceptance"}
+  ],
+  "rows": [
+    {"label": "POC Kick-Off", "blocks": [{"start": 1, "end": 1, "color": "planning"}]},
+    {"label": "WS1: Source Integration & Identity Matching", "subtitle": "AD forests · Entra ID · Workday", "blocks": [{"start": 1, "end": 2, "color": "workstream1"}]},
+    {"label": "WS1: Unification & Governance", "subtitle": "Personas · precedence · lifecycle · IGA/PAM", "blocks": [{"start": 2, "end": 3, "color": "workstream1"}]},
+    {"label": "WS1: KDC-Ready LDAP Views", "subtitle": "SID / group mapping and validated identity views", "blocks": [{"start": 3, "end": 4, "color": "workstream1"}]},
+    {"label": "WS1 Acceptance", "blocks": [{"start": 4, "end": 4, "color": "acceptance"}]},
+    {"label": "WS2: Kerberos Foundation", "subtitle": "Bridge deployment · DNS · trusts · certificates", "blocks": [{"start": 4, "end": 5, "color": "workstream2"}]},
+    {"label": "WS2: Cross-Domain SMB Validation", "subtitle": "PKINIT · PAC · service ticket · access", "blocks": [{"start": 5, "end": 5 , "color": "workstream2"}]},
+    {"label": "WS2: Representative LDAP Application", "subtitle": "Federated authentication & authorization", "blocks": [{"start": 5, "end": 6, "color": "workstream2"}]},
+    {"label": "WS2: Epic Authentication", "subtitle": "Cross-domain authentication to Epic", "blocks": [{"start": 6, "end": 8, "color": "workstream2"}]},
+    {"label": "Final Validation & Read-Out", "blocks": [{"start": 8, "end": 8, "color": "acceptance"}]}
+  ]
+}
